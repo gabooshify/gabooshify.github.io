@@ -32,5 +32,28 @@ img {
             <img src="letter.jpg" alt="letter">
         </a>
     </div>
+    <script>
+        // List of URLs to preload
+        const urls = [
+            'https://d2l.ucalgary.ca/d2l/home',
+            'https://youtube.ca',
+            'https://example.com',
+            'https://example.com'
+        ];
+
+        // Function to preload content
+        function preloadContent(url) {
+            fetch(url, { mode: 'no-cors' })
+                .then(response => {
+                    console.log(`Preloaded: ${url}`);
+                })
+                .catch(error => {
+                    console.error(`Error preloading ${url}:`, error);
+                });
+        }
+
+        // Preload all URLs
+        urls.forEach(url => preloadContent(url));
+    </script>
 </body>
 </html>
