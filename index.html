@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Optional: Adds space between images */
+}
+.left-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Optional: Adds space between images */
+}
+img {
+    width: 500px;
+    height: 300px;
+}
+</style>
+<title>Adrian's Homepage</title>
+</head>
+<body style="background-color:powderblue;">
+    <h1 style="text-align:center; font-family:Helvetica; background-color:DodgerBlue;">Adrian's Homepage</h1>
+    <div class="container">
+        <div class="left-images">
+            <a rel="preload" href="https://d2l.ucalgary.ca/d2l/home" target="_blank">
+                <img src="ResponseTimeGraph.png" alt="HTML tutorial">
+            </a>
+            <a rel="preload" href="https://youtube.ca" target="_blank">
+                <img src="remote.jpg" alt="remote" style="width:500px; height:300px;">
+            </a>
+        </div>
+        <a rel="preload" href="https://albumoftheyear.org" target="_blank">
+            <img src="headphones.jpg" alt="headphones">
+        </a>
+    </div>
+</body>
+</html>
