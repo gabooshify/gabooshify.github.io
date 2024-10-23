@@ -4,20 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Optional: Adds space between images */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
 }
-.left-images {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Optional: Adds space between images */
-}
-
-.right-images {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 img {
     width: 500px;
     height: 300px;
@@ -28,24 +19,18 @@ img {
 <body style="background-color:powderblue;">
     <h1 style="text-align:center; font-family:Helvetica; background-color:DodgerBlue;">Adrian's Homepage</h1>
     <div class="container">
-        <div class="left-images">
-            <a rel="preload" href="https://d2l.ucalgary.ca/d2l/home" target="_blank">
-                <img src="ResponseTimeGraph.png" alt="HTML tutorial">
-            </a>
-            <a rel="preload" href="https://youtube.ca" target="_blank">
-                <img src="remote.jpg" alt="remote" style="width:500px; height:300px;">
-            </a>
-        </div>
-
-<div class="container">
-<div class="right-images">
+        <a rel="preload" href="https://d2l.ucalgary.ca/d2l/home" target="_blank">
+            <img src="ResponseTimeGraph.png" alt="HTML tutorial">
+        </a>
+        <a rel="preload" href="https://youtube.ca" target="_blank">
+            <img src="remote.jpg" alt="tv remote">
+        </a>
         <a rel="preload" href="https://albumoftheyear.org" target="_blank">
             <img src="headphones.jpg" alt="headphones">
         </a>
-
-	<a rel="preload" href="https://gmail.com" target="_blank">
-		<img src="letter.jpg" alt="letter">
-	</a>
+        <a rel="preload" href="https://gmail.com" target="_blank">
+            <img src="letter.jpg" alt="letter">
+        </a>
     </div>
 </body>
 </html>
